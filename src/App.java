@@ -70,8 +70,8 @@ public class App {
             }).start(); // Inicia a thread
 
         } catch (IOException ex) {
-            JOptionPane.showMessageDialog(frame, "Erro ao conectar: " + ex.getMessage()); // 
+            JOptionPane.showMessageDialog(frame, "Erro ao conectar: " + ex.getMessage()); // Msg de erro 
         }
     }
 }
-rafael teste 
+tem que ir pra master 
