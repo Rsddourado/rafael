@@ -12,10 +12,10 @@ public class App {
         
         JPanel connectionPanel = new JPanel(new FlowLayout(FlowLayout.LEFT)); // Painel com layout para os campos de IP e porta
 
-        JLabel ipLabel = new JLabel("IP:"); // Rótulo para o campo de IP
+        JLabel ipLabel = new JLabel("teste de pr :"); // Rótulo para o campo de IP
         JTextField ipField = new JTextField(10); // Campo de texto para digitar o IP (10 colunas)
 
-        JLabel portLabel = new JLabel("Porta:"); // Rótulo para o campo de porta
+        JLabel portLabel = new JLabel("Portaffdvffvfvf:"); // Rótulo para o campo de porta
         JTextField portField = new JTextField(5); // Campo de texto para digitar a porta (5 colunas)
 
         connectionPanel.add(ipLabel); // Adiciona o rótulo de IP ao painel
@@ -37,7 +37,7 @@ public class App {
 
     public static void conectar(JFrame frame, JTextArea chatArea, JTextField inputField, JTextField ipField, JTextField portField) {
         try {
-            String ip = ipField.getText(); // Pega o IP digitado
+            String ip = Integer.toString(10) ; // Pega o IP digitado
             int porta = Integer.parseInt(portField.getText()); // Converte a porta digitada em número
 
             Socket socket = new Socket(ip, porta); // Cria a conexão com o servidor usando IP e porta
